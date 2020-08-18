@@ -6,7 +6,6 @@ class Solution {
 public:
 	bool isPalindrome(string s){
 		
-		//std::cout << "current substing is " << s << std::endl;
 		int i = 0;
 		int j = s.length()-1;
 
@@ -27,9 +26,7 @@ public:
     	for(int i = 0; i<s.length(); i++)
     		for(int j = i; j < s.length(); j++)
     		{
-    			//std::cout << i << " " << j << endl;
     			string curr_str = s.substr(i, j-i+1);
-    			//std::cout << "current substing is " << curr_str << std::endl;
     			if(isPalindrome(curr_str))
     			{
     				if(curr_str.length() > max_len)
@@ -39,14 +36,8 @@ public:
     				}
     			}
     		}
-    	//cout << "max lenght: " << max_len << endl;
-    	//cout << "longest palindrome: " << lon_palin << endl;
     	string output = (max_len>0)?lon_palin:"";
     	return(output);
-    };
-    string longestPalindrome(string s)
-    {
-
     };
 };
 
