@@ -36,7 +36,7 @@ public:
     				}
     			}
     		}
-    	string output = (max_len>0)?lon_palin:"";
+    	string output = (max_len>1)?lon_palin:"";
     	return(output);
     };
 };
