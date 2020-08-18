@@ -49,6 +49,7 @@ int main()
 	cout << "Please enter the string: " << endl;
 	std::cin >> s;
 	
+	//Return output
 	Solution sol;
 	string lon_palin = sol.longestPalindromeNaive(s);
 	std::cout << lon_palin << std::endl;
