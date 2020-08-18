@@ -19,6 +19,7 @@ public:
 		return true;
 	};
 	
+	//This routine returns the longest palindrome if it exists
     string longestPalindromeNaive(string s) {
     	string lon_palin;
     	int max_len = 0;
@@ -36,7 +37,7 @@ public:
     				}
     			}
     		}
-    	string output = (max_len>1)?lon_palin:"";
+    	string output = (max_len>0)?lon_palin:"";
     	return(output);
     };
 };
