@@ -48,7 +48,7 @@ using namespace std;
 class Solution {
 public:
     bool isValidSudoku(vector<vector<string>>& board) {
-        
+        //brute solution passes in leetcode!
         return true;    
     }
     bool isValidSudokuBrute(vector<vector<string>>& board) {
